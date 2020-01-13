@@ -1,4 +1,37 @@
-h1{
+h1,p,li{
 	font-size: 20px;
 	font-family:Arial;
+
+}
+.navigation li{
+	display: inline;
+	margin: 3px;
+	padding: 20px;
+	border-radius: 20px;
+	background-color: #19FF15;
+	align-content: center;
+
+}
+h1 {
+	text-align: center;
+}
+.logo {
+	width: 200px;
+	align-content: center;
+	margin-left: 15%;
+}
+li{
+	text-align: left;
+}
+.image{
+	width: 600px;
+	height: auto;
+}
+.produit{
+	width: 600px;
+	height: auto;
+}
+body{
+	margin-left: 20%;
+	margin-right: 20%;
 }

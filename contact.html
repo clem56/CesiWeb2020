@@ -6,22 +6,25 @@
 		<link rel="stylesheet" type="text/css" href="CSS.css">
 	</head>
 	<body>
-		<img src="./logo.png" alt="alt">
+		<header>
+		<a href="index.html"><img src="./logo.png" alt="alt" class="logo"></a>
+		</header>
 		<nav class="navigation">
 			<div>
 				<ol>
-					<li>Accueil</li>
+					<li><a href="./index.html">Accueil</a></li>
 					<li><a href="./entreprise.html">Entreprise</a></li>
 					<li><a href="./page2.html">Nos produits</a></li>
 					<li><a href="./contact.html">Nous contacter</a></li>
 				</ol>
 			</div>
 		</nav>
+
 		<h1>Formulaire de contact</h1>
 		<div class="form">
 		<form method="post" action="contact.html">
 			<div>
-				<p>Nom</p>
+				<p class="formulaire">Nom</p>
 				<label for="nom"></label>
 				<input type="text" name="nom" id="nom">
 			</div>
