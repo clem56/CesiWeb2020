@@ -4,6 +4,9 @@
 		<meta charset="utf-8">
 		<title>Contact</title>
 		<link rel="stylesheet" type="text/css" href="CSS.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&v=3.exp&libraries=weather"></script>
+
 	</head>
 	<body>
 		<header>
@@ -11,69 +14,95 @@
 		</header>
 		<nav class="navigation">
 			<div>
-				<ol>
-					<li><a href="./index.html">Accueil</a></li>
-					<li><a href="./entreprise.html">Entreprise</a></li>
-					<li><a href="./page2.html">Nos produits</a></li>
-					<li><a href="./contact.html">Nous contacter</a></li>
+				<ol class="menu">
+					<li class="item"><a href="./index.html" class="linkItem" class="active">Accueil</a></li>
+					<li class="item"><a href="./entreprise.html" class="linkItem">Entreprise</a></li>
+					<li class="item"><a href="./page2.html" class="linkItem">Nos produits</a></li>
+					<li class="item"><a href="./contact.html" class="linkItem">Nous contacter</a></li>
+					<li class="item"><a href="./actualites.html" class="linkItem">Actualités</a></li>
 				</ol>
 			</div>
 		</nav>
+		<main>
 
-		<h1>Formulaire de contact</h1>
+			<h1>Formulaire de contact</h1>
+			<aside>
+				<div style='overflow:hidden;height:440px;width:700px;'>
+
+    <!--position de la carte dans la page html-->
+    			<div id='gmap_canvas' style='height:350px;width:700px;'></div>
+    			<style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+    			<script>
+            function init_map() {
+            var myOptions = {
+                zoom: 16,
+                center: new google.maps.LatLng(46.6667,-1.4333),
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+        }
+        google.maps.event.addDomListener(window, 'load', init_map);
+       			</script>
+				</div>
+			</aside>
 		<div class="form">
-		<form method="post" action="contact.html">
-			<div>
-				<p class="formulaire">Nom</p>
+		<form method="post" action="contact.html" class="contactForm">
+			<div class="Formulaire">
+				<p class="form">Nom :</p>
 				<label for="nom"></label>
-				<input type="text" name="nom" id="nom">
+				<input type="text" name="nom" id="nom" required="">
 			</div>
 			
-			<div>
-				<p>Prénom</p>
+			<div class="Formulaire">
+				<p class="form">Prénom :</p>
 				<label for="prenom"></label>
-				<input type="text" name="prenom" id="prenom">
+				<input type="text" name="prenom" id="prenom" required="">
 			</div>
 			
-			<div>
-				<p>Adresse Mail</p>
+			<div class="Formulaire">
+				<p class="form">Adresse Mail :</p>
 				<label for="mail"></label>
-				<input type="text" name="mail" id="mail">
+				<input type="text" name="mail" id="mail" required="">
 			</div>
 			
-			<div>
-				<p>Numéro de Téléphone</p>
+			<div class="Formulaire">
+				<p class="form">Numéro de Téléphone :</p>
 				<label for="numero"></label>
 				<input type="text" name="numero" id="numero">
 			</div>
 			
-			<div>
-				<p>Objet</p>
+			<div class="Formulaire">
+				<p class="form">Objet :</p>
 				<label for="objet"></label>
-				<input type="text" name="objet" id="objet">
+				<input type="text" name="objet" id="objet" required="">
 			</div>
 			
-			<div>
-				<p>Message</p>
+			<div class="Formulaire">
+				<p class="form">Message :</p>
 				<label for="message"></label>
-				<textarea cols="60" rows="6" name="form[message]" id="message"></textarea>
+				<textarea cols="60" rows="6" name="form[message]" id="message" required=""></textarea>
 			</div>
 			
-			<div>
+			<div class="Formulaire">
 				<label for="envoyer"></label>
-				<input type="submit" name="envoyer" id="envoyer" value="Envoyer">
+				<input type="submit" name="envoyer" id="envoyer" value="Envoyer" class="submit">
 			</div>
 
-		</form>
-		</div>
+			</form>
+			</div>
+			
+		</main>
+		
 		<footer>
 			<div>
 				<ul>
 					<li>Plus d'informations : <a href="http://madera-construction.fr/tertiaire/">Site</a></li>
 					<li>Nous contacter : 02 51 98 18 32</li>
+					<li><a href="./contact.html">Nous envoyer un message</a></li>
 				</ul>
-				<a href="https://www.facebook.com/Madera-construction-bois-170020203016473/"><img src="https://img.icons8.com/cute-clipart/64/000000/facebook.png" alt="facebook"></a>
-				<a href="https://www.linkedin.com/company/madera---le-modulaire-bois/"><img src="https://img.icons8.com/cute-clipart/64/000000/linkedin.png" alt="linkedin"></a>
+				<a href="https://www.facebook.com/Madera-construction-bois-170020203016473/" target="blank"><img src="https://img.icons8.com/cute-clipart/64/000000/facebook.png" alt="facebook"></a>
+				<a href="https://www.linkedin.com/company/madera---le-modulaire-bois/" target="blank"><img src="https://img.icons8.com/cute-clipart/64/000000/linkedin.png" alt="linkedin"></a>
+				<p>©Clément SAVARY 2020</p>
 			</div>
 		</footer>
 	</body>
