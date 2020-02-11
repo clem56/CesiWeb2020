@@ -5,29 +5,31 @@ h1,p,li{
 }
 .menu{
 	overflow: hidden;
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-	background-color: #333;
+	display:inline-block;
+    padding:1%;
+    font-size:1.5em;
+    margin-left: 8%;
+    margin-top: -20%;
+    text-align:center;
+    width:98%;
 }
 .item{
-	float: left;
-	margin-right: 6%;
-	align-content: center;	
+	display: inline;
+	margin-right: 1%;
 }
 .linkItem{
-	display: block;
-  	color: white;
+  	color: green;
+  	margin-left: 2%;
   	text-align: left;
-  	padding: 14px 16px;
-  	text-decoration: none;
+  	font-family: Calibri;
+  	font-size: 1em;
 }
 .active{
 	background-color: #19FF15;
 }
 h1 {
 	text-align: center;
-	font-size: 25px;
+	font-size: 1.5em;
 }
 .implantation{
 	text-align: left;
@@ -36,83 +38,59 @@ h1 {
 	text-align: left;
 }
 .logo{
-	width: 200px;
-	align-content: center;
-	margin-left: 15%;
-	display: flex;
+	width: 20%;
+	margin-left: 5%;
 
+}
+body{
+	width: 100%;
+	align-content: center;
 }
 li{
 	text-align: left;
 }
 .image{
 	width: 100%;
-	height: auto;
 }
 .produit{
 	width: 100%;
 	height: auto;
 }
-body{
-	margin-left: 20%;
-	margin-right: 20%;
-}
 .image1{
-	width: 500px;
-	height: 500px;
+	width: 100%;
+	height: auto;
 }
 .image2{
-	width: 500px;
-	height: 500px;
+	width: 100%;
+	height: auto;
 }
 .image3{
-	width: 500px;
-	height: 500px;
+	width: 100%;
+	height: auto;
 }
 .image4{
-	width: 500px;
-	height: 500px;
+	width: 100%;
+	height: auto;
+}
+.maison, .schema{
+	width: 100%;
 }
 article{
 	font-family: Arial;
-	font-size: 15px;
+	font-size: 1em;
 }
 a:hover{
 	color: #334CFF;
-}
-.box1{
-	width: 100px;
-	height: 100px;
-	display: inline-block;
-	background-color: brown;
-	position: relative;
-}
-.box2{
-	width: 100px;
-	height: 100px;
-	display: inline-block;
-	background-color: green;
-	position: relative;
-}
-.box3{
-	width: 100px;
-	height: 100px;
-	display: inline-block;
-	background-color: blue;
-	position: relative;
-}
-.boxes{
-	margin: 50px,50px;
 }
 p{
 	text-align: center;
 }
 #facebook,#linkedin{
-	align-content: center;
+	align-items: : center;
 }
 .actu{
-	width: 600px;
-	height: 600px;
+	width: 100%;
+	height: 100%;
 	margin-left: 10%;
 	align-content: center;
 	font-family: Arial;
@@ -128,8 +106,37 @@ p{
 	align-content: center;
 }
 input{
-	width: 25%;
+	width: 30%;
 }
 .submit{
 	width: 10%;
+}
+.prod{
+	width: 100%;
+}
+.lien{
+	color: grey;
+	margin-left: 1%;
+	margin-right: 2%;
+  	text-align: left;
+  	font-family: Calibri;
+  	font-size: 1.6em;
+  	width: 100%;
+}
+.itemLien{
+	display: inline;
+}
+.menuLien{
+	overflow: hidden;
+	display:inline-block;
+    padding:0%;
+    font-size:1.5em;
+    margin-left: -2%;
+    margin-top: -20%;
+    text-align:center;
+    width:100%;
+    background-color: black;
+}
+.photo{
+	display: inline-block;
 }
