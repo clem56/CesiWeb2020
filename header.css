@@ -1,0 +1,40 @@
+.menu{
+	overflow: hidden;
+	display:inline-block;
+    padding:1%;
+    font-size:1em;
+    margin-left: 3%;
+    margin-top: 0%;
+    text-align:center;
+    width:98%;
+}
+.item{
+	display: inline;
+	margin-right: 1%;
+}
+.linkItem{
+  	color: green;
+  	margin-left: 2%;
+  	text-align: left;
+  	font-family: Century Gothic;;
+  	font-size: 1em;
+}
+a:hover{
+  color: #334CFF;
+}
+.logo{
+  width: 20%;
+  margin-left: 5%;
+
+}
+@media screen(max-width: 100%){
+
+a:hover{
+  color: #334CFF;
+}
+.logo{
+  width: 20%;
+  margin-left: 5%;
+
+}
+}

@@ -1,0 +1,14 @@
+.facebook, .linkedin{
+	align-items: : center;
+	width: 10%;
+	height: auto;
+	display: inline-block;
+	margin-left: 70%;
+
+}
+.footer{
+	background-color: #606263;
+	font-family: Century Gothic;
+	margin-bottom: -2%;
+
+}

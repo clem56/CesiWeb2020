@@ -1,0 +1,66 @@
+body{
+	width: 100%;
+	align-content: center;
+	font-family: Century Gothic;
+}
+li{
+	text-align: left;
+}
+article{
+	font-family: Century Gothic;
+	
+}
+h1,h2,h3{
+	font-size: 1.6em;
+	text-align: center;
+}
+#art,#art1, .cctp, .article, .article1,#implant{
+	font-size: 1em;
+	text-align: justify-all;
+	margin-left: 3%;
+	font-family: Century Gothic;
+	margin-right: 3%;
+	margin-bottom: 5%;
+}
+
+a:hover{
+	color: #334CFF;
+}
+.contactForm{
+	display: grid;
+	margin: 20%, 20%;
+	margin-bottom: 8%;
+}
+.form{
+	text-align: center;
+}
+.gmap_canvas{
+	align-content: center;
+}
+.maison, .schema, .prod, .produit{
+	width: 100%;
+
+}
+p{
+	text-align: center;
+}
+.produit{
+	width: 100%;
+	height: auto;
+}
+.formulaire{
+	text-align: center;
+}
+.actu{
+	width: 50%;
+	height: auto;
+	margin-left: 20%;
+}
+.implant{
+	text-align: right;
+	font-family: Century Gothic;
+	font-size: 1em;
+}
+#lien{
+	text-align: center;
+}
